@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Style for the image container */
+        .carousel-container {
+          width: 500px;
+          height: 300px;
+          overflow: hidden;
+          margin: 0 auto;
+        }
+    
+        /* Style for the image slider */
+        .carousel-slider {
+          display: flex;
+          width: 2000px; /* The total width of all the images */
+          animation: slide 5s infinite; /* The duration and type of animation */
+        }
+    
+        /* Style for each individual image */
+        .carousel-slider img {
+          width: 500px;
+          height: 300px;
+          object-fit: cover;
+        }
+    
+        /* Animation code */
+        @keyframes slide {
+          0% { transform: translateX(0); }
+          20% { transform: translateX(0); }
+          25% { transform: translateX(-500px); }
+          45% { transform: translateX(-500px); }
+          50% { transform: translateX(-1000px); }
+          70% { transform: translateX(-1000px); }
+          75% { transform: translateX(-1500px); }
+          95% { transform: translateX(-1500px); }
+          100% { transform: translateX(-2000px); }
+        }
+      </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel-slider">
+          <img src="image1.jpg" alt="Image 1">
+          <img src="image2.jpg" alt="Image 2">
+          <img src="image3.jpg" alt="Image 3">
+          <img src="image4.jpg" alt="Image 4">
+          <img src="image5.jpg" alt="Image 5">
+        </div>
+      </div>
+    
+</body>
+</html>

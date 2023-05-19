@@ -1,0 +1,157 @@
+<div class="block1">
+    <h1><span class="border-bottom">No Pain</span><span class="text-primary"> No Gain</span></h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.</p>
+    <button class="btn btn-primary"><i class="fas fa-phone-square-alt"></i> Call Now</button>
+</div>
+
+<div class="carousel-container">
+    <div class="carousel-slider">
+        <img src="pic/img1.jpg" alt="Image 1">
+        <img src="pic/img2.jpg" alt="Image 2">
+        <img src="pic/img3.jpg" alt="Image 3">
+        <img src="pic/img4.jpg" alt="Image 4">
+        <img src="pic/img5.jpg" alt="Image 5">
+    </div>
+</div>	
+<style>
+/* Style for the image container */
+.carousel-container {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Style for the image slider */
+.carousel-slider {
+  display: flex;
+  width: 2000px; /* The total width of all the images */
+  animation: slide 5s infinite; /* The duration and type of animation */
+}
+
+/* Style for each individual image */
+.carousel-slider img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Animation code */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(0); }
+  25% { transform: translateX(-500px); }
+  45% { transform: translateX(-500px); }
+  50% { transform: translateX(-1000px); }
+  70% { transform: translateX(-1000px); }
+  75% { transform: translateX(-1500px); }
+  95% { transform: translateX(-1500px); }
+  100% { transform: translateX(-2000px); }
+}
+</style>
+</head>
+<body>
+<div class="carousel-container">
+<div class="carousel-slider">
+  <img src="image1.jpg" alt="Image 1">
+  <img src="image2.jpg" alt="Image 2">
+  <img src="image3.jpg" alt="Image 3">
+  <img src="image4.jpg" alt="Image 4">
+  <img src="image5.jpg" alt="Image 5">
+</div>
+</div>
+
+</body>
+
+
+<!-- Card -->
+<div class="block2">
+    <div class="card">
+        <div class="imgbx">
+            <img src="img/musclegain.png">
+        </div>
+        <div class="content">
+            <h2>Muscle Gain</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero velit dicta impedit error tenetur iure nemo eligendi magnam. Laborum ab, possimus libero voluptatum tempore eos veniam cupiditate molestiae cum dolor.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgbx">
+            <img src="">
+        </div>
+        <div class="content">
+            <h2>Card two</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero velit dicta impedit error tenetur iure nemo eligendi magnam. Laborum ab, possimus libero voluptatum tempore eos veniam cupiditate molestiae cum dolor.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgbx">
+            <img src="">
+        </div>
+        <div class="content">
+            <h2>Card Three</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero velit dicta impedit error tenetur iure nemo eligendi magnam. Laborum ab, possimus libero voluptatum tempore eos veniam cupiditate molestiae cum dolor.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+.block2{
+	position: relative;
+	width: 1100px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+.block2 .card{
+	position: relative;
+	max-width: 300px;
+	height: 250px;
+	background: black;
+	margin: 30px 10px;
+	padding: 20px 15px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease-in-out;
+	border-radius: 30px;
+}
+.block2 .card:hover{
+	height: 450px;
+	cursor: pointer;
+}
+.block2 .card .imgbx{
+	position:relative;
+	width: 100%;
+	height: 260px;
+	top: -30px;
+	left: 0px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.block2 .card .imgbx img{
+	max-width: 100%;
+	border-radius: 4px;
+}
+.block2 .card .content{
+	position: relative;
+	margin-top: -140px;
+	padding:10px 15px;
+	text-align: center;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+.block2 .card:hover .content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}
+</style>
+<!-- card -->
